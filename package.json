@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "cypress": "^12.17.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "cypress:dev": "npx cypress open --env configFile=dev && configFile=reporter-config.js",
+    "cypress:qa": "npx cypress open --env configFile=qa --config-file cypress.config.js",
+    "cypress:dev_headless": "npx cypress run --env configFile=dev",
+    "cypress:qa_headless": "npx cypress run --env configFile=qa"
+  }
+}
